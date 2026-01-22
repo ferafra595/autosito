@@ -9,7 +9,7 @@
     "km": 89000,
     "price": 13900,
     "location": "Roma",
-    "img": "assets/golf.jpg",
+    "img": "golf.jpg",
     "notes": "Tagliandi regolari, 2 chiavi, sensori parcheggio."
   },
   {
@@ -22,7 +22,7 @@
     "km": 42000,
     "price": 10900,
     "location": "Roma",
-    "img": "assets/panda.jpg",
+    "img": "panda.jpg",
     "notes": "Perfetta per città, consumi bassi."
   },
   {
@@ -35,7 +35,7 @@
     "km": 76000,
     "price": 15800,
     "location": "Roma",
-    "img": "assets/a3.jpg",
+    "img": "a3.jpg",
     "notes": "Interni curati, Bluetooth, cruise control."
   }
 ]
