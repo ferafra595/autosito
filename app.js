@@ -8,7 +8,7 @@ window.App = (() => {
   };
 
   async function loadCars() {
-    const res = await fetch("data/cars.json", { cache: "no-store" });
+    const res = await fetch("cars.json", { cache: "no-store" });
     if (!res.ok) throw new Error("Impossibile caricare il catalogo");
     return await res.json();
   }
