@@ -1,0 +1,41 @@
+[
+  {
+    "id": "golf-2018",
+    "featured": true,
+    "title": "Volkswagen Golf 1.6 TDI Comfortline",
+    "brand": "Volkswagen",
+    "year": 2018,
+    "fuel": "Diesel",
+    "km": 89000,
+    "price": 13900,
+    "location": "Roma",
+    "img": "assets/golf.jpg",
+    "notes": "Tagliandi regolari, 2 chiavi, sensori parcheggio."
+  },
+  {
+    "id": "panda-2020",
+    "featured": true,
+    "title": "Fiat Panda 1.0 Hybrid City Life",
+    "brand": "Fiat",
+    "year": 2020,
+    "fuel": "Ibrida",
+    "km": 42000,
+    "price": 10900,
+    "location": "Roma",
+    "img": "assets/panda.jpg",
+    "notes": "Perfetta per città, consumi bassi."
+  },
+  {
+    "id": "a3-2017",
+    "featured": false,
+    "title": "Audi A3 Sportback 1.4 TFSI",
+    "brand": "Audi",
+    "year": 2017,
+    "fuel": "Benzina",
+    "km": 76000,
+    "price": 15800,
+    "location": "Roma",
+    "img": "assets/a3.jpg",
+    "notes": "Interni curati, Bluetooth, cruise control."
+  }
+]

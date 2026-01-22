@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contatti — AutoMarket</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">AutoMarket</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="auto.html">Auto in vendita</a>
+        <a href="contatti.html" aria-current="page">Contatti</a>
+      </nav>
+      <a class="btn small" href="#richiesta">Richiedi info</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container two-col">
+      <div>
+        <h1 class="h2">Contatti</h1>
+        <p class="muted">Per disponibilità, preventivi, permute e appuntamenti.</p>
+
+        <div class="card">
+          <p><strong>Telefono:</strong> <a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/390000000000">Chatta su WhatsApp</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@tuodominio.it">info@tuodominio.it</a></p>
+          <p><strong>Sede:</strong> Via Esempio 1, 00100 Roma</p>
+          <p class="muted small">Orari: Lun–Sab 09:00–19:00 (esempio)</p>
+        </div>
+
+        <div class="card">
+          <h2 class="h3">Nota</h2>
+          <p class="muted">
+            Il sito è una vetrina informativa: non si effettuano acquisti online.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" id="richiesta">
+        <h2 class="h3">Richiedi informazioni</h2>
+        <p class="muted small">Puoi usare un form gratuito (Formspree) oppure solo email/WhatsApp.</p>
+
+        <p><strong>Opzione semplice:</strong> manda una mail con oggetto “Richiesta auto”.</p>
+        <a class="btn" href="mailto:info@tuodominio.it?subject=Richiesta%20auto&body=Ciao,%20sono%20...%20Mi%20interessa%20l%27auto%20...%20">Invia email</a>
+
+        <hr class="sep"/>
+
+        <p><strong>Opzione form:</strong> incolla qui l’endpoint di Formspree.</p>
+
+        <form class="form" action="https://formspree.io/f/INSERISCI_ID" method="POST">
+          <label>
+            Nome
+            <input name="nome" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Messaggio
+            <textarea name="messaggio" rows="5" placeholder="Indica modello, budget, permuta, ecc." required></textarea>
+          </label>
+          <button class="btn" type="submit">Invia richiesta</button>
+          <p class="muted small">Sostituisci <code>INSERISCI_ID</code> dopo aver creato un form su Formspree.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>AutoMarket</strong><br/>
+        <span class="muted small">© <span id="year"></span></span>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

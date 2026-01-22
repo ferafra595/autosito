@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Auto in vendita — AutoMarket</title>
+  <meta name="description" content="Catalogo auto in vendita. Sito informativo, nessun acquisto online." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">AutoMarket</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="auto.html" aria-current="page">Auto in vendita</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+      <a class="btn small" href="contatti.html#richiesta">Richiedi info</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1 class="h2">Auto in vendita</h1>
+        <p class="muted">Filtra e apri la scheda. Per info e disponibilità: contattaci.</p>
+      </div>
+
+      <div class="filters card">
+        <div class="filter">
+          <label for="q">Cerca</label>
+          <input id="q" type="search" placeholder="Es. Golf, 1.6, diesel..." />
+        </div>
+        <div class="filter">
+          <label for="brand">Marca</label>
+          <select id="brand">
+            <option value="">Tutte</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="maxPrice">Prezzo max</label>
+          <input id="maxPrice" type="number" min="0" step="500" placeholder="Es. 15000" />
+        </div>
+        <div class="filter">
+          <label for="maxKm">Km max</label>
+          <input id="maxKm" type="number" min="0" step="5000" placeholder="Es. 80000" />
+        </div>
+        <div class="filter actions">
+          <button class="btn" id="apply">Applica</button>
+          <button class="btn ghost" id="reset">Reset</button>
+        </div>
+      </div>
+
+      <div id="catalog" class="grid cards"></div>
+      <p id="empty" class="muted center" style="display:none;">Nessun risultato con questi filtri.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>AutoMarket</strong><br/>
+        <span class="muted small">© <span id="year"></span></span>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    window.App.initCatalog();
+  </script>
+</body>
+</html>

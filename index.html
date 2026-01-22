@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoMarket — Auto in vetrina</title>
+  <meta name="description" content="Vetrina auto: informazioni, disponibilità e contatti. Nessun acquisto online." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">AutoMarket</a>
+      <nav class="nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="auto.html">Auto in vendita</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+      <a class="btn small" href="contatti.html#richiesta">Richiedi info</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Vetrina auto semplice, chiara, veloce.</h1>
+          <p class="lead">
+            Qui trovi le auto disponibili con schede complete. Per prezzo finale, permute o finanziamento,
+            contattaci: <strong>non è un e-commerce</strong> e non si compra online.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="auto.html">Vedi auto</a>
+            <a class="btn ghost" href="contatti.html">Contattaci</a>
+          </div>
+
+          <ul class="bullets">
+            <li>Catalogo aggiornabile via file JSON (senza database)</li>
+            <li>Filtri rapidi (marca, prezzo, km)</li>
+            <li>Richieste via WhatsApp / email / form</li>
+          </ul>
+        </div>
+
+        <div class="card hero-card">
+          <h2 class="h3">In evidenza</h2>
+          <div id="featured" class="grid cards"></div>
+          <p class="muted small">Le auto in evidenza si impostano nel file <code>data/cars.json</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ultimi arrivi</h2>
+          <p class="muted">Anteprima automatica dal catalogo.</p>
+        </div>
+        <div id="latest" class="grid cards"></div>
+        <div class="center">
+          <a class="btn ghost" href="auto.html">Vedi tutto il catalogo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>Come funziona</h2>
+          <ol class="steps">
+            <li>Scegli un’auto dal catalogo</li>
+            <li>Invia una richiesta (WhatsApp, email o form)</li>
+            <li>Confermiamo disponibilità e fissiamo appuntamento</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3 class="h3">Nota importante</h3>
+          <p class="muted">
+            Questo sito è una vetrina informativa. Le informazioni possono variare. Foto e dotazioni sono indicative.
+            Prezzo e condizioni si definiscono direttamente con noi.
+          </p>
+          <a class="btn small" href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>AutoMarket</strong><br/>
+        <span class="muted small">© <span id="year"></span> — Vetrina auto</span>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    window.App.initHome();
+  </script>
+</body>
+</html>
